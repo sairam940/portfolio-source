@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
@@ -9,20 +9,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout code
       - uses: actions/checkout@v4
 
-      - name: Use Node.js 18
+      # 2️⃣ Setup Node.js
+      - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
+      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: npm ci
 
+      # 4️⃣ Build and export Next.js site
       - name: Build and export
         run: npm run build:export
 
-      - name: Deploy to gh-pages branch
+      # 5️⃣ Add .nojekyll file to allow _next folder
+      - name: Add .nojekyll
+        run: touch out/.nojekyll
+
+      # 6️⃣ Deploy to master branch (user page)
+      - name: Deploy to master branch
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx gh-pages -d out -b gh-pages
+        run: npx gh-pages -d out -b master
