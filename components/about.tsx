@@ -30,7 +30,7 @@ export default function About() {
         <span className="font-medium"> 20% faster defect detection</span>. Previously at 
         <span className="font-medium"> Visa</span>, I spearheaded quality strategies for enterprise financial applications, delivering 
         <span className="font-medium"> zero-defect migrations</span> and reducing regression cycles by 
-        <span className="font-medium">35%</span>.
+        <span className="font-medium"> 35%</span>.
       </p>
 
       <p>

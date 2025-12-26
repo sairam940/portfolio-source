@@ -136,7 +136,7 @@ export const projectsData = [
   {
     title: "Wine Classification Neural Network",
     description:
-      "Multilayer neural network for wine variety classification using backpropogation algorithm.",
+      "Multilayer neural network for wine variety classification using backpropagation algorithm.",
     tags: ["Java", "Neuroph Framework", "Data Analytics", "Machine Learning"],
     imageUrl: wineClassImg,
     url: "https://github.com/sairam940/wineClassificationNeuralNetwork",
