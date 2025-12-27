@@ -33,10 +33,10 @@ jobs:
         run: touch out/.nojekyll
 
       # 6️⃣ Deploy to sairam940.github.io repo (user page)
-      - name: Deploy to sairam940.github.io
+      - name: Deploy to sairam940.github.io (master)
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          npx gh-pages -d out -b master -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/sairam940/sairam940.github.io.git
+          npx gh-pages -d out -b master -r https://x-access-token:${GH_PAT}@github.com/sairam940/sairam940.github.io.git
