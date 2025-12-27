@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import testAIImg from "@/public/TestAI.jpg";
 import crmTestImg from "@/public/crmTest.jpg";
-import cloudTestImg from "@/public/CloudTesting.jpg";
+import cloudTestImg from "@/public/cloudTesting.jpg";
 import wineClassImg from "@/public/wineClass.jpg";
 import somsImg from "@/public/soms.jpg";
 
