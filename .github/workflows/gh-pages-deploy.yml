@@ -24,14 +24,19 @@ jobs:
 
       # 4️⃣ Build and export Next.js site
       - name: Build and export
+        env:
+          NEXT_PUBLIC_SEND_EMAIL_API_URL: ${{ secrets.NEXT_PUBLIC_SEND_EMAIL_API_URL }}
         run: npm run build:export
 
       # 5️⃣ Add .nojekyll file to allow _next folder
       - name: Add .nojekyll
         run: touch out/.nojekyll
 
-      # 6️⃣ Deploy to master branch (user page)
-      - name: Deploy to master branch
+      # 6️⃣ Deploy to sairam940.github.io repo (user page)
+      - name: Deploy to sairam940.github.io
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx gh-pages -d out -b master
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          npx gh-pages -d out -b master -r https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/sairam940/sairam940.github.io.git
