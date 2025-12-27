@@ -1,29 +1,48 @@
 
-## Setup
+## Overview
 
-1. Add RESEND_API_KEY environment variable in `.env.local`
-2. In the `actions/sendEmail.ts` file, change the `to` email to your own recipient if you want to receive messages
+Static-exported Next.js portfolio deployed to GitHub Pages (user site) with a Vercel serverless function handling the contact form email via Resend.
 
+---
 
-## Deploying to GitHub Pages (static export)
+## What lives where
 
-This project is configured for static export and GitHub Pages deployment:
+- Frontend (this repo): static site built with `npm run build:export`; deployed to `https://sairam940.github.io/` via GitHub Actions + `gh-pages`.
+- Email API: Vercel function `api/send-email` in the `portfolio-email-api` repo; receives form POSTs and sends email with Resend.
+- Secrets in this repo (GitHub → Settings → Secrets and variables → Actions):
+	- `NEXT_PUBLIC_SEND_EMAIL_API_URL`: full URL of the deployed Vercel endpoint (e.g. `https://your-app.vercel.app/api/send-email`).
+	- `GH_PAT`: GitHub PAT with `repo` scope to push the built site to `sairam940/sairam940.github.io` (branch `master`).
 
-- Build & export locally: `npm run build:export`
-- Deploy to GitHub Pages: `npm run deploy` (requires `gh-pages` dev dependency)
+## Local setup
 
-Notes when hosting on GitHub Pages:
-- The contact form is a client-side form that POSTs to an API endpoint. GitHub Pages is static-only, so you must host the email API separately (recommended: Vercel).
-- Set the environment variable `NEXT_PUBLIC_SEND_EMAIL_API_URL` to your deployed API endpoint (for example `https://your-app.vercel.app/api/send-email`) before building the static site so the contact form will post to that URL.
-- If hosting at `https://username.github.io/repo`, set `NEXT_PUBLIC_BASE_PATH=/repo` before build to ensure correct asset paths.
-
-Example (PowerShell):
+1) Install deps: `npm ci`
+2) Optional local env for server actions (not used in static Pages deploy): create `.env.local` with `RESEND_API_KEY=...` if you ever run the server action locally.
+3) Build/export locally (uses `NEXT_PUBLIC_SEND_EMAIL_API_URL` if set in the shell):
 
 ```powershell
 $env:NEXT_PUBLIC_SEND_EMAIL_API_URL = "https://your-app.vercel.app/api/send-email"
-$env:NEXT_PUBLIC_BASE_PATH = "/your-repo-name"
 npm run build:export
-npm run deploy
 ```
 
-If you want, I can help deploy the API to Vercel and wire everything up for you.
+## Vercel email API setup
+
+- Env var on Vercel: `RESEND_API_KEY`.
+- Handler expects JSON `{ senderEmail, message }`, allows CORS from `https://sairam940.github.io`.
+- Update the recipient or from address in the Vercel repo if needed, then redeploy Vercel.
+
+## Deploying the site (GitHub Actions)
+
+- Workflow: `.github/workflows/gh-pages-deploy.yml` runs on pushes to `main`.
+- Steps: install → `npm run build:export` (with `NEXT_PUBLIC_SEND_EMAIL_API_URL`) → add `.nojekyll` → publish `out/` to `sairam940/sairam940.github.io` branch `master` using `GH_PAT`.
+- To rerun: GitHub UI → Actions → `Deploy Portfolio to GitHub Pages` → select latest run → Re-run.
+
+## If something changes
+
+- API URL changes: update GitHub secret `NEXT_PUBLIC_SEND_EMAIL_API_URL`, rerun the deploy workflow.
+- PAT rotates: update secret `GH_PAT`, rerun deploy.
+- Vercel Resend key rotates: update Vercel `RESEND_API_KEY`, redeploy Vercel; then rerun site deploy so the frontend bakes the same API URL (URL unchanged unless you moved hosts).
+- Domain/origin changes: update CORS in Vercel handler (allowed origin) and ensure `NEXT_PUBLIC_SEND_EMAIL_API_URL` points to the new host.
+
+## Quick test plan
+
+- After deploy, open `https://sairam940.github.io`, submit the contact form, expect HTTP 200 and email received; verify in Resend logs if needed.
