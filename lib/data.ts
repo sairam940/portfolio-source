@@ -171,5 +171,8 @@ export const skillsData = [
   "Python",
   "React",
   "Selenium",
+  "SOAP and REST APIs",
+  "SQL",
+  "TestNG",
   "TypeScript",
 ] as const;
