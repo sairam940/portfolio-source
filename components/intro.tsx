@@ -63,9 +63,9 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Ram.</span> A{" "}
-        <span className="font-bold">Senior SDET</span> with{" "}
-        <span className="font-bold">10+ years</span> of experience architecting test automation solutions. I specialize in{" "}
-        <span className="italic font-bold">AI-Powered</span> testing strategies.
+        <span className="font-bold">Senior Software Engineer</span> with{" "}
+        <span className="font-bold">10+ years</span> of experience building quality solutions for distributed systems. I specialize in{" "}
+        <span className="italic font-bold">AI-Powered</span> test automation & CI/CD strategies.
       </motion.h1>
 
       <motion.div
@@ -90,7 +90,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/Resume.pdf"
+          href="/Ram_Pullabhotla_Sr SW Engineer_Autoamation_Resume.pdf"
           download
         >
           Download Resume{" "}

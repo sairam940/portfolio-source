@@ -37,13 +37,22 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "System Dev Engineer II (Technical Lead)",
+    company: "Amazon",
+    location: "Austin, TX",
+    description:
+      "Building scalable automation and quality solutions for cloud-native microservices serving millions of users. Leading CI/CD quality pipelines and end-to-end automation across global Fire TV OS systems. Integrating AI-powered testing tools (Amazon Q, Kiro AI, Cline) to accelerate defect detection and system reliability. Mentoring cross-functional teams on BDD/TDD practices and distributed system testing.",
+    icon: React.createElement(FaReact),
+    date: "Dec 2025 - Present",
+  },
+  {
     title: "Lead Software QA Engineer",
     company: "Amazon",
     location: "Austin, TX",
     description:
-      "Architecting QA solutions for cloud-native microservices serving millions of users across multiple AWS regions. Built TypeScript/Python automation frameworks reducing regression test time by 40% and pioneered AI-powered testing integration using Amazon Q, Kiro AI, and Cline, achieving 20% faster defect detection. Led end-to-end test automation pipelines for Fire TV OS across global markets while mentoring cross-functional teams on BDD/TDD practices.",
+      "Built TypeScript/Python automation frameworks reducing regression time by 40%. Implemented initial AI-powered testing integration (Amazon Q, Kiro AI, Cline).Developed foundational end-to-end automation pipelines for Fire TV OS. Mentored teams on BDD/TDD practices and automation adoption.",
     icon: React.createElement(FaReact),
-    date: "May 2022 - present",
+    date: "May 2022 - Dec 2025",
   },
   {
     title: "Senior Software Enginer - Test",
@@ -157,6 +166,7 @@ export const skillsData = [
   "Azure DevOps",
   "CI/CD",
   "Cline",
+  "Cloud Shepherd",
   "Cypress",
   "Docker",
   "Git",
