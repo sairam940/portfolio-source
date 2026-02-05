@@ -37,20 +37,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "System Dev Engineer II (Technical Lead)",
+    title: "Sr System Dev Engineer",
     company: "Amazon",
     location: "Austin, TX",
     description:
-      "Building scalable automation and quality solutions for cloud-native microservices serving millions of users. Leading CI/CD quality pipelines and end-to-end automation across global Fire TV OS systems. Integrating AI-powered testing tools (Amazon Q, Kiro AI, Cline) to accelerate defect detection and system reliability. Mentoring cross-functional teams on BDD/TDD practices and distributed system testing.",
+      "• Building scalable automation and quality solutions for cloud-native microservices serving millions of users\n• Leading CI/CD quality pipelines and end-to-end automation across global Fire TV OS systems\n• Integrating AI-powered testing tools (Amazon Q, Kiro AI, Cline) to accelerate defect detection and system reliability\n• Mentoring cross-functional teams on BDD/TDD practices and distributed system testing",
     icon: React.createElement(FaReact),
     date: "Dec 2025 - Present",
   },
   {
-    title: "Lead Software QA Engineer",
+    title: "Senior Software QA Engineer (Technical Lead)",
     company: "Amazon",
     location: "Austin, TX",
     description:
-      "Built TypeScript/Python automation frameworks reducing regression time by 40%. Implemented initial AI-powered testing integration (Amazon Q, Kiro AI, Cline).Developed foundational end-to-end automation pipelines for Fire TV OS. Mentored teams on BDD/TDD practices and automation adoption.",
+      "• Built TypeScript/Python automation frameworks reducing regression time by 40%\n• Developed comprehensive testing solutions for entertainment platforms (Luna, FireTV) and distributed systems\n• Created automated testing for web, mobile and TV appliactions with cross platform integration testing\n• Implemented initial AI-powered testing integration (Amazon Q, Kiro AI, Cline)\n• Developed foundational end-to-end automation pipelines for Fire TV OS\n• Mentored teams on BDD/TDD practices and automation adoption",
     icon: React.createElement(FaReact),
     date: "May 2022 - Dec 2025",
   },
@@ -59,7 +59,7 @@ export const experiencesData = [
     company: "Visa",
     location: "Austin, TX",
     description:
-      "Led quality engineering for enterprise financial services applications processing payment transactions. Spearheaded QA strategy for large-scale CRM migration from Salesforce to Dynamics with zero production defects. Built comprehensive CI/CD integration using Azure DevOps and designed automated test suites implementing BDD practices, reducing regression cycle time by 35%.",
+      "• Led quality engineering for enterprise financial services applications processing payment transactions\n• Spearheaded QA strategy for large-scale CRM migration from Salesforce to Dynamics with zero production defects\n• Built comprehensive CI/CD integration using Azure DevOps and designed automated test suites implementing BDD practices, reducing regression cycle time by 35%",
     icon: React.createElement(CgWorkAlt),
     date: "Dec 2019 - May 2022",
   },
@@ -68,7 +68,7 @@ export const experiencesData = [
     company: "Change Healthcare",
     location: "Nashville, TN",
     description:
-      "Optimized healthcare application testing architecture and led offshore development teams. Reduced overall testing time by 30% through Serenity BDD framework implementation and built scalable test frameworks for Java Spring Boot microservices on AWS cloud infrastructure.",
+      "• Optimized healthcare application testing architecture and led offshore development teams\n• Reduced overall testing time by 30% through Serenity BDD framework implementation\n• Built scalable test frameworks for Java Spring Boot microservices on AWS cloud infrastructure",
     icon: React.createElement(CgWorkAlt),
     date: "Feb 2019 - Dec 2019",
   }, 
@@ -77,7 +77,7 @@ export const experiencesData = [
     company: "University of Southern Mississippi",
     location: "Hattiesburg, MS",
     description:
-      "Developed innovative mobile and voice applications enhancing university student experience. Built Alexa skills using AWS and Node.js, increasing university app engagement by 33% based on Google Analytics while solving critical navigation issues through campus mapping solutions.",
+      "• Developed innovative mobile and voice applications enhancing university student experience\n• Built Alexa skills using AWS and Node.js, increasing university app engagement by 33%\n• Solved critical navigation issues through campus mapping solutions",
     icon: React.createElement(CgWorkAlt),
     date: "Nov 2017 - Nov 2018",
   },
@@ -86,7 +86,7 @@ export const experiencesData = [
     company: "Capgemini",
     location: "Bengaluru, India",
     description:
-      "Led automation initiatives across multiple client projects (T-Mobile & Thomson Reuters). Reduced test cycle time by 50% through comprehensive web application automation and implemented batch test execution using TestNG and Maven, significantly improving defect identification accuracy.",
+      "• Led automation initiatives across multiple client projects (T-Mobile & Thomson Reuters)\n• Reduced test cycle time by 50% through comprehensive web application automation\n• Implemented batch test execution using TestNG and Maven, significantly improving defect identification accuracy",
     icon: React.createElement(CgWorkAlt),
     date: "Dec 2015 - Jun 2017",
   },
@@ -95,7 +95,7 @@ export const experiencesData = [
     company: "Tata Consultancy Services",
     location: " Chennai, India",
     description:
-      "Delivered enterprise-scale automation solutions for Liberty Mutual insurance applications. Achieved $8,000 annual cost savings by implementing Selenium WebDriver framework replacing legacy HP-QTP tools and automated 450+ test scripts, reducing manual testing overhead while accelerating release velocity.",
+      "• Delivered enterprise-scale automation solutions for Liberty Mutual insurance applications\n• Achieved $8,000 annual cost savings by implementing Selenium WebDriver framework replacing legacy HP-QTP tools\n• Automated 450+ test scripts, reducing manual testing overhead while accelerating release velocity",
     icon: React.createElement(CgWorkAlt),
     date: "Oct 2013 - Dec 2015",
   },
@@ -104,7 +104,7 @@ export const experiencesData = [
     company: "University of Southern Mississippi",
     location: "Hattiesburg, MS",
     description:
-      "Specialized in AI and machine learning. Enhanced my programming skills in Python, Java, and data structures while completing projects on natural language processing and predictive analytics.",
+      "• Specialized in AI and machine learning\n • Enhanced programming skills in Python, Java, and data structures\n• Completed projects on natural language processing and predictive analytics",
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2017 - Dec 2018",
   },
@@ -113,7 +113,7 @@ export const experiencesData = [
     company: "Sastra University",
     location: "Thanjavur, India",
     description:
-      "Strong foundation in computer science and software engineering principles including algorithms, data structures, and software development methodologies.",
+      "• Strong foundation in computer science and software engineering principles\n• Solid understanding of algorithms, data structures, and software development methodologies",
     icon: React.createElement(LuGraduationCap),
     date: "Jun 2009 - Jun 2013",
   },
@@ -164,9 +164,11 @@ export const skillsData = [
   "AWS",
   "API Testing",
   "Azure DevOps",
+  "BDD/TDD",
   "CI/CD",
   "Cline",
   "Cloud Shepherd",
+  "Cross-Platform Testing",
   "Cypress",
   "Docker",
   "Git",
@@ -177,6 +179,8 @@ export const skillsData = [
   "JIRA",
   "Kiro AI",
   "Kubernetes",
+  "Mobile Testing (Android/iOS)",
+  "Performance Testing",
   "Playwright",
   "Python",
   "React",
