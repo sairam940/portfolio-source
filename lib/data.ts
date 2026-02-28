@@ -7,6 +7,13 @@ import crmTestImg from "@/public/crmTest.jpg";
 import cloudTestImg from "@/public/cloudTesting.jpg";
 import wineClassImg from "@/public/wineClass.jpg";
 import somsImg from "@/public/soms.jpg";
+import amazonLogo from "@/public/amazon_logo.jpg";
+import capgeminiLogo from "@/public/capgemini_logo.jpg";
+import changeHealthcareLogo from "@/public/change_healthcare_logo.jpg";
+import tcsLogo from "@/public/tcs_logo.jpg";
+import visaLogo from "@/public/visa_logo.jpg";
+import usmLogo from "@/public/usm_logo.jpg";
+import sastraLogo from "@/public/sastra_logo.jpg";
 
 export const links = [
   {
@@ -37,27 +44,30 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Sr System Dev Engineer",
+    title: "System Dev Engineer II",
     company: "Amazon",
     location: "Austin, TX",
+    logo: amazonLogo,
     description:
       "• Building scalable automation and quality solutions for cloud-native microservices serving millions of users\n• Leading CI/CD quality pipelines and end-to-end automation across global Fire TV OS systems\n• Integrating AI-powered testing tools (Amazon Q, Kiro AI, Cline) to accelerate defect detection and system reliability\n• Mentoring cross-functional teams on BDD/TDD practices and distributed system testing",
     icon: React.createElement(FaReact),
     date: "Dec 2025 - Present",
   },
   {
-    title: "Senior Software QA Engineer (Technical Lead)",
+    title: "Software QA Engineer (Technical Lead)",
     company: "Amazon",
     location: "Austin, TX",
     description:
       "• Built TypeScript/Python automation frameworks reducing regression time by 40%\n• Developed comprehensive testing solutions for entertainment platforms (Luna, FireTV) and distributed systems\n• Created automated testing for web, mobile and TV appliactions with cross platform integration testing\n• Implemented initial AI-powered testing integration (Amazon Q, Kiro AI, Cline)\n• Developed foundational end-to-end automation pipelines for Fire TV OS\n• Mentored teams on BDD/TDD practices and automation adoption",
     icon: React.createElement(FaReact),
+    logo: amazonLogo,
     date: "May 2022 - Dec 2025",
   },
   {
     title: "Senior Software Enginer - Test",
     company: "Visa",
     location: "Austin, TX",
+    logo: visaLogo,
     description:
       "• Led quality engineering for enterprise financial services applications processing payment transactions\n• Spearheaded QA strategy for large-scale CRM migration from Salesforce to Dynamics with zero production defects\n• Built comprehensive CI/CD integration using Azure DevOps and designed automated test suites implementing BDD practices, reducing regression cycle time by 35%",
     icon: React.createElement(CgWorkAlt),
@@ -67,6 +77,7 @@ export const experiencesData = [
     title: "Software Development Engineer in Test II",
     company: "Change Healthcare",
     location: "Nashville, TN",
+    logo: changeHealthcareLogo,
     description:
       "• Optimized healthcare application testing architecture and led offshore development teams\n• Reduced overall testing time by 30% through Serenity BDD framework implementation\n• Built scalable test frameworks for Java Spring Boot microservices on AWS cloud infrastructure",
     icon: React.createElement(CgWorkAlt),
@@ -76,6 +87,7 @@ export const experiencesData = [
     title: "Application Developer- Graduate Reserach Assistant",
     company: "University of Southern Mississippi",
     location: "Hattiesburg, MS",
+    logo: usmLogo,
     description:
       "• Developed innovative mobile and voice applications enhancing university student experience\n• Built Alexa skills using AWS and Node.js, increasing university app engagement by 33%\n• Solved critical navigation issues through campus mapping solutions",
     icon: React.createElement(CgWorkAlt),
@@ -85,6 +97,7 @@ export const experiencesData = [
     title: "Software Development Engineer in Test I (Associate Consultant)",
     company: "Capgemini",
     location: "Bengaluru, India",
+    logo: capgeminiLogo,
     description:
       "• Led automation initiatives across multiple client projects (T-Mobile & Thomson Reuters)\n• Reduced test cycle time by 50% through comprehensive web application automation\n• Implemented batch test execution using TestNG and Maven, significantly improving defect identification accuracy",
     icon: React.createElement(CgWorkAlt),
@@ -94,6 +107,7 @@ export const experiencesData = [
     title: "Test Automation Engineer (Systems Engineer)",
     company: "Tata Consultancy Services",
     location: " Chennai, India",
+    logo: tcsLogo,
     description:
       "• Delivered enterprise-scale automation solutions for Liberty Mutual insurance applications\n• Achieved $8,000 annual cost savings by implementing Selenium WebDriver framework replacing legacy HP-QTP tools\n• Automated 450+ test scripts, reducing manual testing overhead while accelerating release velocity",
     icon: React.createElement(CgWorkAlt),
@@ -103,6 +117,7 @@ export const experiencesData = [
     title: "Master's in Computer Science",
     company: "University of Southern Mississippi",
     location: "Hattiesburg, MS",
+    logo: usmLogo,
     description:
       "• Specialized in AI and machine learning\n • Enhanced programming skills in Python, Java, and data structures\n• Completed projects on natural language processing and predictive analytics",
     icon: React.createElement(LuGraduationCap),
@@ -112,6 +127,7 @@ export const experiencesData = [
     title: "Bachelor's in Technology",
     company: "Sastra University",
     location: "Thanjavur, India",
+    logo: sastraLogo,
     description:
       "• Strong foundation in computer science and software engineering principles\n• Solid understanding of algorithms, data structures, and software development methodologies",
     icon: React.createElement(LuGraduationCap),

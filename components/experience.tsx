@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
@@ -44,7 +45,18 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
+              <div className="flex items-center gap-3 mb-2">
+                {item.logo && (
+                  <Image
+                    src={item.logo}
+                    alt={`${item.company} logo`}
+                    width={40}
+                    height={40}
+                    className="object-contain flex-shrink-0"
+                  />
+                )}
+                <h3 className="font-semibold capitalize">{item.title}</h3>
+              </div>
 
               <p className="text-sm font-medium text-gray-600 dark:text-white/75 !mt-0">
                 {item.company && <span className="italic">{item.company}</span>}
@@ -56,9 +68,13 @@ export default function Experience() {
                 )}
               </p>
 
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                {item.description}
-              </p>
+              <ul className="!mt-1 !font-normal text-gray-700 dark:text-white/75 list-none space-y-1">
+                {item.description.split("\n").map((line, idx) => (
+                  <li key={idx} className="pl-0">
+                    {line}
+                  </li>
+                ))}
+              </ul>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
