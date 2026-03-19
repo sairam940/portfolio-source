@@ -44,38 +44,38 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "System Dev Engineer II",
+    title: "System Development Engineer II",
     company: "Amazon",
     location: "Austin, TX",
     logo: amazonLogo,
     description:
-      "• Building scalable automation and quality solutions for cloud-native microservices serving millions of users\n• Leading CI/CD quality pipelines and end-to-end automation across global Fire TV OS systems\n• Integrating AI-powered testing tools (Amazon Q, Kiro AI, Cline) to accelerate defect detection and system reliability\n• Mentoring cross-functional teams on BDD/TDD practices and distributed system testing",
+      "• Building scalable infrastructure and solutions for cloud-native microservices serving millions of users\n• Leading CI/CD quality pipelines and end-to-end automation across global systems\n• Integrating AI-powered tools (Amazon Q, Kiro AI, Cline) to accelerate development and system reliability.",
     icon: React.createElement(FaReact),
     date: "Dec 2025 - Present",
   },
   {
-    title: "Software QA Engineer (Technical Lead)",
+    title: "Quality Assurance Engineer II",
     company: "Amazon",
     location: "Austin, TX",
     description:
-      "• Built TypeScript/Python automation frameworks reducing regression time by 40%\n• Developed comprehensive testing solutions for entertainment platforms (Luna, FireTV) and distributed systems\n• Created automated testing for web, mobile and TV appliactions with cross platform integration testing\n• Implemented initial AI-powered testing integration (Amazon Q, Kiro AI, Cline)\n• Developed foundational end-to-end automation pipelines for Fire TV OS\n• Mentored teams on BDD/TDD practices and automation adoption",
-    icon: React.createElement(FaReact),
+      "• Built TypeScript/Python automation frameworks reducing regression time by 40%\n• Developed comprehensive testing solutions for entertainment platforms (Luna, FireTV) and distributed systems\n• Created automated testing for web, mobile and TV appliactions with cross platform integration testing\n• Implemented initial AI-powered testing integration (Amazon Q, Kiro AI, Cline)\n• Developed foundational end-to-end automation pipelines for Fire TV OS.",
+    icon: React.createElement(CgWorkAlt),
     logo: amazonLogo,
     date: "May 2022 - Dec 2025",
   },
   {
-    title: "Senior Software Enginer - Test",
+    title: "Senior Software Test Engineer",
     company: "Visa",
     location: "Austin, TX",
     logo: visaLogo,
     description:
-      "• Led quality engineering for enterprise financial services applications processing payment transactions\n• Spearheaded QA strategy for large-scale CRM migration from Salesforce to Dynamics with zero production defects\n• Built comprehensive CI/CD integration using Azure DevOps and designed automated test suites implementing BDD practices, reducing regression cycle time by 35%",
+      "• Led quality engineering for enterprise financial services applications processing payment transactions\n• Spearheaded QA strategy for large-scale CRM migration from Salesforce to Dynamics with zero production defects\n• Built comprehensive CI/CD integration using Azure DevOps and designed automated test suites implementing BDD practices, reducing regression cycle time by 35%.\n • Automated batch processing engine and portal applications to deliver high quality, defect-free releases. ",
     icon: React.createElement(CgWorkAlt),
     date: "Dec 2019 - May 2022",
   },
   {
     title: "Software Development Engineer in Test II",
-    company: "Change Healthcare",
+    company: "Change Healthcare (via Innova Solutions)",
     location: "Nashville, TN",
     logo: changeHealthcareLogo,
     description:
@@ -94,22 +94,22 @@ export const experiencesData = [
     date: "Nov 2017 - Nov 2018",
   },
   {
-    title: "Software Development Engineer in Test I (Associate Consultant)",
+    title: "Software Development Engineer in Test I",
     company: "Capgemini",
     location: "Bengaluru, India",
     logo: capgeminiLogo,
     description:
-      "• Led automation initiatives across multiple client projects (T-Mobile & Thomson Reuters)\n• Reduced test cycle time by 50% through comprehensive web application automation\n• Implemented batch test execution using TestNG and Maven, significantly improving defect identification accuracy",
+      "• Led automation initiatives across multiple client projects (T-Mobile & Thomson Reuters)\n• Reduced test cycle time by 50% through comprehensive web application automation\n• Implemented batch test execution using TestNG and Maven, significantly improving defect identification accuracy\n• Designed reusable Page Object-based frameworks for scalable end-to-end automation.\n•Automated performance testing workflows saving ~8 hours per test cycle through tooling and process improvements.",
     icon: React.createElement(CgWorkAlt),
     date: "Dec 2015 - Jun 2017",
   },
   {
-    title: "Test Automation Engineer (Systems Engineer)",
+    title: "Test Automation Engineer",
     company: "Tata Consultancy Services",
     location: " Chennai, India",
     logo: tcsLogo,
     description:
-      "• Delivered enterprise-scale automation solutions for Liberty Mutual insurance applications\n• Achieved $8,000 annual cost savings by implementing Selenium WebDriver framework replacing legacy HP-QTP tools\n• Automated 450+ test scripts, reducing manual testing overhead while accelerating release velocity",
+      "• Delivered enterprise-scale automation solutions for Liberty Mutual insurance applications\n• Achieved $8,000 annual cost savings by implementing Selenium WebDriver framework replacing legacy HP-QTP tools\n• Automated 650+ test scripts, reducing manual testing overhead while accelerating release velocity.\n• Optimized regression suites executing 1,050+ automated tests, reducing failure rates by ~8% through refactoring. ",
     icon: React.createElement(CgWorkAlt),
     date: "Oct 2013 - Dec 2015",
   },
