@@ -81,7 +81,7 @@ export const experiencesData = [
     description:
       "• Optimized healthcare application testing architecture and led offshore development teams\n• Reduced overall testing time by 30% through Serenity BDD framework implementation\n• Built scalable test frameworks for Java Spring Boot microservices on AWS cloud infrastructure",
     icon: React.createElement(CgWorkAlt),
-    date: "Feb 2019 - Dec 2019",
+    date: "Feb 2019 - Nov 2019",
   }, 
   {
     title: "Application Developer- Graduate Reserach Assistant",
@@ -187,6 +187,9 @@ export const skillsData = [
   "Cross-Platform Testing",
   "Cypress",
   "Docker",
+  "Distributed Systems Testing",
+  "End-to-End Automation",
+  "Framework Design",
   "Git",
   "Hydra",
   "Javascript",
@@ -205,4 +208,5 @@ export const skillsData = [
   "SQL",
   "TestNG",
   "TypeScript",
+  "UI Testing",
 ] as const;
