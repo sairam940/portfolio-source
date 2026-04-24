@@ -49,7 +49,7 @@ export const experiencesData = [
     location: "Austin, TX",
     logo: amazonLogo,
     description:
-      "• Building scalable infrastructure and solutions for cloud-native microservices serving millions of users\n• Leading CI/CD quality pipelines and end-to-end automation across global systems\n• Integrating AI-powered tools (Amazon Q, Kiro AI, Cline) to accelerate development and system reliability.",
+      "• Building scalable infrastructure and solutions for cloud-native microservices serving millions of users\n• Leading CI/CD quality pipelines and end-to-end automation across global systems\n• Owned and resolved security risks in systems and built comprehensive monitoring and alerting solutions.",
     icon: React.createElement(FaReact),
     date: "Dec 2025 - Present",
   },
@@ -58,7 +58,7 @@ export const experiencesData = [
     company: "Amazon",
     location: "Austin, TX",
     description:
-      "• Built TypeScript/Python automation frameworks reducing regression time by 40%\n• Developed comprehensive testing solutions for entertainment platforms (Luna, FireTV) and distributed systems\n• Created automated testing for web, mobile and TV appliactions with cross platform integration testing\n• Implemented initial AI-powered testing integration (Amazon Q, Kiro AI, Cline)\n• Developed foundational end-to-end automation pipelines for Fire TV OS.",
+      "• Built TypeScript/Python automation frameworks reducing regression time by 40%\n• Developed comprehensive testing solutions for web, mobile and TV appliactions (Luna, FireTV) and distributed systems\n • Implemented AI-powered testing integration (Amazon Q, Kiro AI, Cline)\n• Developed foundational end-to-end automation pipelines for Fire TV OS.",
     icon: React.createElement(CgWorkAlt),
     logo: amazonLogo,
     date: "May 2022 - Dec 2025",
@@ -124,7 +124,7 @@ export const experiencesData = [
     date: "Aug 2017 - Dec 2018",
   },
   {
-    title: "Bachelor's in Technology",
+    title: "Bachelor of Technology",
     company: "Sastra University",
     location: "Thanjavur, India",
     logo: sastraLogo,
