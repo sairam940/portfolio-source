@@ -64,8 +64,8 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Ram.</span> A{" "}
         <span className="font-bold">Senior Software Engineer</span> with{" "}
-        <span className="font-bold">10+ years</span> of experience building quality solutions for distributed systems. I specialize in{" "}
-        <span className="italic font-bold">AI-Powered</span> test automation & CI/CD strategies.
+        <span className="font-bold">10+ years</span> of experience specializing in distributed systems, cloud-native platform engineering,
+        <span className="italic font-bold"> AI-assisted</span> software development, and scalable automation.
       </motion.h1>
 
       <motion.div

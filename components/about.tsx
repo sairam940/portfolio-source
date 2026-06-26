@@ -19,11 +19,11 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
 <p className="mb-3">
-  My journey in software engineering began with a simple belief: <span className="italic">"great systems start with reliable, scalable solutions"</span>. Over the past <span className="font-medium">10 years</span>, I've evolved from writing test scripts to architecting <span className="font-medium">AI-powered frameworks</span> that serve millions of users across distributed systems.
+  My journey in software engineering began with a simple belief: <span className="italic">"Great systems are built with simplicity, scalability, and reliability at their core."</span>. Over the past <span className="font-medium">10 years</span>, that belief has guided my growth from building automation solutions to <span className="font-medium">leading engineering initiatives</span>  that improve software delivery & system reliability.
 </p>
 
 <p className="mb-3">
-  At <span className="font-medium">Amazon</span>, I design and lead the development of automation frameworks for <span className="font-medium">Fire TV OS and Global Engineering Services</span>, integrating AI tools like <span className="font-medium">Amazon Q, Kiro AI</span> and <span className="font-medium">Cline</span> to achieve <span className="font-medium">20% faster defect detection</span> and ensure system reliability. Previously at <span className="font-medium">Visa</span>, I drove quality and automation strategies for enterprise financial applications, delivering <span className="font-medium">zero-defect migrations</span> and reducing regression cycles by <span className="font-medium">35%</span>.
+  At <span className="font-medium">Amazon</span>, I worked across consumer products and backend services, leading large-scale engineering initiatives ranging from <span className="font-medium">cloud migrations and release engineering to automation strategy and service reliability.</span> Before that, <span className="font-medium">at Visa, </span> I helped modernize enterprise financial applications by <span className="font-medium"> building scalable automation solutions </span> that accelerated software delivery while <span className="font-medium"> maintaining high standards of quality</span>.
 </p>
 
 <p className="mb-3">
@@ -31,7 +31,7 @@ export default function About() {
 </p>
 
 <p>
-  <span className="italic">Today, I'm focused on the future of software quality and reliability:</span> leveraging AI and scalable automation to improve <span className="font-medium">system resilience</span>, accelerate <span className="font-medium">CI/CD pipelines</span>, and enhance <span className="font-medium">distributed software delivery</span>.
+  <span className="italic">Today, I'm focused on designing resilient systems, improving engineering efficiency, and creating technology </span> that is scalable, maintainable, and built to last.
 </p>
     </motion.section>
   );

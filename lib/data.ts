@@ -49,19 +49,9 @@ export const experiencesData = [
     location: "Austin, TX",
     logo: amazonLogo,
     description:
-      "• Building scalable infrastructure and solutions for cloud-native microservices serving millions of users\n• Leading CI/CD quality pipelines and end-to-end automation across global systems\n• Owned and resolved security risks in systems and built comprehensive monitoring and alerting solutions.",
+      "• Architected and scaled cloud-native infrastructure supporting distributed microservices serving millions of customers across multiple AWS regions/n • Led quality strategy across platform services by designing scalable automation frameworks for backend services, web, mobile, and Fire TV, enabling reliable end-to-end validation throughout the software lifecycle\n • Built high-performance automation frameworks in TypeScript and Python, reducing regression execution time by ~40% while accelerating deployment velocity\n • Influenced infrastructure architecture, observability, deployment validation, and resiliency by partnering with service owners to define system design, failure thresholds, and release strategies\n • Integrated AI-assisted engineering workflows using Kiro AI and Cline, improving engineering productivity by ~20% and accelerating infrastructure development\n • Owned end-to-end quality strategy for multiple Fire TV platform launches, delivering defect-free releases across global regions through comprehensive automation and risk-based release planning.",
     icon: React.createElement(FaReact),
-    date: "Dec 2025 - Present",
-  },
-  {
-    title: "Quality Assurance Engineer II",
-    company: "Amazon",
-    location: "Austin, TX",
-    description:
-      "• Built TypeScript/Python automation frameworks reducing regression time by 40%\n• Developed comprehensive testing solutions for web, mobile and TV appliactions (Luna, FireTV) and distributed systems\n • Implemented AI-powered testing integration (Amazon Q, Kiro AI, Cline)\n• Developed foundational end-to-end automation pipelines for Fire TV OS.",
-    icon: React.createElement(CgWorkAlt),
-    logo: amazonLogo,
-    date: "May 2022 - Dec 2025",
+    date: "May 2022 - Jun 2026",
   },
   {
     title: "Senior Software Test Engineer",
