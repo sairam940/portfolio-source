@@ -7,6 +7,7 @@ import crmTestImg from "@/public/crmTest.jpg";
 import cloudTestImg from "@/public/cloudTesting.jpg";
 import wineClassImg from "@/public/wineClass.jpg";
 import somsImg from "@/public/soms.jpg";
+import appleLogo from "@/public/apple_logo.png";
 import amazonLogo from "@/public/amazon_logo.jpg";
 import capgeminiLogo from "@/public/capgemini_logo.jpg";
 import changeHealthcareLogo from "@/public/change_healthcare_logo.jpg";
@@ -44,13 +45,23 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Senior Software Developer- Test",
+    company: "Apple",
+    location: "Austin, TX",
+    logo: appleLogo,
+    description:
+      "• Leading release validation on storage systems and distributed services for various devicen • Owning release confidence by architecting and executing automation signals.",
+    icon: React.createElement(FaReact),
+    date: "Jun 2026 - Present",
+  },
+  {
     title: "System Development Engineer II",
     company: "Amazon",
     location: "Austin, TX",
     logo: amazonLogo,
     description:
-      "• Architected and scaled cloud-native infrastructure supporting distributed microservices serving millions of customers across multiple AWS regions/n • Led quality strategy across platform services by designing scalable automation frameworks for backend services, web, mobile, and Fire TV, enabling reliable end-to-end validation throughout the software lifecycle\n • Built high-performance automation frameworks in TypeScript and Python, reducing regression execution time by ~40% while accelerating deployment velocity\n • Influenced infrastructure architecture, observability, deployment validation, and resiliency by partnering with service owners to define system design, failure thresholds, and release strategies\n • Integrated AI-assisted engineering workflows using Kiro AI and Cline, improving engineering productivity by ~20% and accelerating infrastructure development\n • Owned end-to-end quality strategy for multiple Fire TV platform launches, delivering defect-free releases across global regions through comprehensive automation and risk-based release planning.",
-    icon: React.createElement(FaReact),
+      "• Architected and scaled cloud-native infrastructure supporting distributed microservices serving millions of customers across multiple AWS regions\n • Led quality strategy across platform services by designing scalable automation frameworks for backend services, web, mobile, and Fire TV, enabling reliable end-to-end validation throughout the software lifecycle\n • Built high-performance automation frameworks in TypeScript and Python, reducing regression execution time by ~40% while accelerating deployment velocity\n • Influenced infrastructure architecture, observability, deployment validation, and resiliency by partnering with service owners to define system design, failure thresholds, and release strategies\n • Integrated AI-assisted engineering workflows using Kiro AI and Cline, improving engineering productivity by ~20% and accelerating infrastructure development\n • Owned end-to-end quality strategy for multiple Fire TV platform launches, delivering defect-free releases across global regions through comprehensive automation and risk-based release planning.",
+    icon: React.createElement(CgWorkAlt),
     date: "May 2022 - Jun 2026",
   },
   {

@@ -7,7 +7,7 @@ export default function Footer() {
         &copy; 2026 Ram. All rights reserved.
       </small>
       <p className="text-xs">
-        <span className="font-semibold">About this website:</span> built with
+        <span className="font-semibold">About this website:</span> Built with
         React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
         Framer Motion, React Email & Resend, GitHub pages hosting, Vercel email API hosting.
       </p>
