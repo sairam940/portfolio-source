@@ -50,7 +50,7 @@ export const experiencesData = [
     location: "Austin, TX",
     logo: appleLogo,
     description:
-      "• Leading release validation on storage systems and distributed services for various devicen • Owning release confidence by architecting and executing automation signals.",
+      "• Leading release validation on storage systems and distributed services for various devices  \n • Owning release confidence by architecting and executing automation signals.\n• Identified process gaps and developed automation solutions and internal tools to improve efficiency and reduce repetitive work.",
     icon: React.createElement(FaReact),
     date: "Jun 2026 - Present",
   },
@@ -60,7 +60,7 @@ export const experiencesData = [
     location: "Austin, TX",
     logo: amazonLogo,
     description:
-      "• Architected and scaled cloud-native infrastructure supporting distributed microservices serving millions of customers across multiple AWS regions\n • Led quality strategy across platform services by designing scalable automation frameworks for backend services, web, mobile, and Fire TV, enabling reliable end-to-end validation throughout the software lifecycle\n • Built high-performance automation frameworks in TypeScript and Python, reducing regression execution time by ~40% while accelerating deployment velocity\n • Influenced infrastructure architecture, observability, deployment validation, and resiliency by partnering with service owners to define system design, failure thresholds, and release strategies\n • Integrated AI-assisted engineering workflows using Kiro AI and Cline, improving engineering productivity by ~20% and accelerating infrastructure development\n • Owned end-to-end quality strategy for multiple Fire TV platform launches, delivering defect-free releases across global regions through comprehensive automation and risk-based release planning.",
+      "• Architected and scaled cloud-native infrastructure for distributed microservices serving millions of customers across AWS\n• Led quality strategy across platform services by building scalable automation frameworks for backend, web, mobile, and Fire TV\n• Built high-performance automation frameworks in TypeScript and Python, reducing regression time by ~40%\n• Influenced architecture, observability, deployment validation, and resiliency with service owners\n• Integrated AI-assisted engineering workflows using Kiro AI and Cline, improving productivity by ~20%\n• Owned quality strategy for multiple Fire TV launches, delivering defect-free releases across global regions",
     icon: React.createElement(CgWorkAlt),
     date: "May 2022 - Jun 2026",
   },
@@ -100,7 +100,7 @@ export const experiencesData = [
     location: "Bengaluru, India",
     logo: capgeminiLogo,
     description:
-      "• Led automation initiatives across multiple client projects (T-Mobile & Thomson Reuters)\n• Reduced test cycle time by 50% through comprehensive web application automation\n• Implemented batch test execution using TestNG and Maven, significantly improving defect identification accuracy\n• Designed reusable Page Object-based frameworks for scalable end-to-end automation.\n•Automated performance testing workflows saving ~8 hours per test cycle through tooling and process improvements.",
+      "• Led automation initiatives across multiple client projects (T-Mobile & Thomson Reuters)\n• Reduced test cycle time by 50% through comprehensive web application automation\n• Implemented batch test execution using TestNG and Maven, significantly improving defect identification accuracy\n •Automated performance testing workflows saving ~8 hours per test cycle through tooling and process improvements.",
     icon: React.createElement(CgWorkAlt),
     date: "Dec 2015 - Jun 2017",
   },
@@ -115,14 +115,14 @@ export const experiencesData = [
     date: "Oct 2013 - Dec 2015",
   },
   {
-    title: "Master's in Computer Science",
+    title: "Master of Science",
     company: "University of Southern Mississippi",
     location: "Hattiesburg, MS",
     logo: usmLogo,
     description:
-      "• Specialized in AI and machine learning\n • Enhanced programming skills in Python, Java, and data structures\n• Completed projects on natural language processing and predictive analytics",
+      "• Built a strong foundation in advanced computer science concepts and software engineering practices\n• Strengthened programming skills in Python, Java, and core data structures",
     icon: React.createElement(LuGraduationCap),
-    date: "Aug 2017 - Dec 2018",
+    date: "Graduate",
   },
   {
     title: "Bachelor of Technology",
@@ -130,9 +130,9 @@ export const experiencesData = [
     location: "Thanjavur, India",
     logo: sastraLogo,
     description:
-      "• Strong foundation in computer science and software engineering principles\n• Solid understanding of algorithms, data structures, and software development methodologies",
+      "• Built a solid foundation in computer science and software engineering principles\n• Strengthened understanding of algorithms, data structures, and software development methodologies",
     icon: React.createElement(LuGraduationCap),
-    date: "Jun 2009 - Jun 2013",
+    date: "Undergraduate",
   },
 
 ] as const;
