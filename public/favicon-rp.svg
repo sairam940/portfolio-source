@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="RP favicon">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#020817"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <rect x="8" y="8" width="112" height="112" rx="22" fill="none" stroke="rgba(125,211,252,0.2)" stroke-width="2"/>
+  <text x="64" y="82" text-anchor="middle" fill="url(#text)" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="800" letter-spacing="0.5">RP</text>
+</svg>

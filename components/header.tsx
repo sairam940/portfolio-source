@@ -36,7 +36,12 @@ export default function Header() {
                   link.name === "RP" && "min-w-[3.2rem] rounded-full border border-cyan-400/30 bg-gradient-to-r from-cyan-500/15 via-sky-500/10 to-violet-500/15 px-3 text-[0.82rem] font-extrabold tracking-[0.22em] text-cyan-600 shadow-[0_0_20px_rgba(56,189,248,0.12)] sm:text-[0.9rem] dark:border-cyan-400/30 dark:from-cyan-500/20 dark:via-sky-500/10 dark:to-violet-500/15 dark:text-cyan-300"
                 )}
                 href={link.hash}
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target = document.querySelector(link.hash);
+                  if (target) {
+                    target.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
                 }}

@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Ram Pullabhotla | Personal Portfolio",
   description: "Ram Pullabhotla is a Senior SDET with 10+ years of experience.",
-  icons: { icon: "/favicon-v2.png", shortcut: "/favicon-v2.png" },
+  icons: { icon: "/favicon-rp.svg", shortcut: "/favicon-rp.svg" },
 };
 
 export default function RootLayout({
