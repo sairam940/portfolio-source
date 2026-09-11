@@ -12,29 +12,28 @@ export default function Header() {
     useActiveSectionContext();
 
   return (
-    <header className="z-[999] relative">
-      <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
-        initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{ y: 0, x: "-50%", opacity: 1 }}
-      ></motion.div>
-
-      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+    <header className="fixed left-1/2 top-0 z-[999] -translate-x-1/2 sm:top-6">
+      <motion.nav
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        className="flex w-[min(31rem,calc(100vw-0.75rem))] items-center justify-center rounded-full border border-slate-200/80 bg-white/75 px-1 py-2 shadow-[0_12px_30px_rgba(15,23,42,0.08)] backdrop-blur-2xl transition-colors sm:w-[min(35rem,calc(100vw-1rem))] dark:border-slate-700/80 dark:bg-slate-950/75 dark:shadow-[0_0_30px_rgba(56,189,248,0.15)]"
+        style={{ overflow: "hidden" }}
+      >
+        <ul className="flex w-full items-center justify-center gap-0.5 text-[0.72rem] font-medium text-slate-600 sm:gap-1 sm:text-[0.8rem] dark:text-slate-300">
           {links.map((link) => (
             <motion.li
-              className="h-3/4 flex items-center justify-center relative"
+              className="relative flex items-center justify-center"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
+                  "relative z-10 flex items-center justify-center rounded-full px-2 py-2 text-slate-600 transition hover:text-slate-900 sm:px-2.5 dark:text-slate-300 dark:hover:text-white",
                   {
-                    "text-gray-950 dark:text-gray-200":
-                      activeSection === link.name,
-                  }
+                    "text-slate-900 dark:text-white": activeSection === link.name,
+                  },
+                  link.name === "RP" && "min-w-[3.2rem] rounded-full border border-cyan-400/30 bg-gradient-to-r from-cyan-500/15 via-sky-500/10 to-violet-500/15 px-3 text-[0.82rem] font-extrabold tracking-[0.22em] text-cyan-600 shadow-[0_0_20px_rgba(56,189,248,0.12)] sm:text-[0.9rem] dark:border-cyan-400/30 dark:from-cyan-500/20 dark:via-sky-500/10 dark:to-violet-500/15 dark:text-cyan-300"
                 )}
                 href={link.hash}
                 onClick={() => {
@@ -46,7 +45,7 @@ export default function Header() {
 
                 {link.name === activeSection && (
                   <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
+                    className="absolute inset-0 -z-10 rounded-full border border-cyan-400/30 bg-gradient-to-r from-cyan-500/18 via-sky-500/10 to-violet-500/18 shadow-[0_0_20px_rgba(56,189,248,0.18)]"
                     layoutId="activeSection"
                     transition={{
                       type: "spring",
@@ -59,7 +58,7 @@ export default function Header() {
             </motion.li>
           ))}
         </ul>
-      </nav>
+      </motion.nav>
     </header>
   );
 }

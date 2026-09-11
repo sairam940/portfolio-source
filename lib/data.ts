@@ -18,7 +18,7 @@ import sastraLogo from "@/public/sastra_logo.jpg";
 
 export const links = [
   {
-    name: "Home",
+    name: "RP",
     hash: "#home",
   },
   {
@@ -26,16 +26,20 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
     name: "Experience",
     hash: "#experience",
   },
   {
+    name: "Skills",
+    hash: "#skills",
+  },
+  {
     name: "Projects",
     hash: "#projects",
+  },
+  {
+    name: "Education",
+    hash: "#education",
   },
   {
     name: "Contact",
@@ -45,7 +49,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Senior Software Developer- Test",
+    title: "Senior Software Developer in Test",
     company: "Apple",
     location: "Austin, TX",
     logo: appleLogo,
@@ -75,7 +79,7 @@ export const experiencesData = [
     date: "Dec 2019 - May 2022",
   },
   {
-    title: "Software Development Engineer in Test II",
+    title: "Software Development Engineer Test II",
     company: "Change Healthcare (via Innova Solutions)",
     location: "Nashville, TN",
     logo: changeHealthcareLogo,
@@ -85,7 +89,7 @@ export const experiencesData = [
     date: "Feb 2019 - Nov 2019",
   }, 
   {
-    title: "Application Developer- Graduate Reserach Assistant",
+    title: "Graduate Research Assistant",
     company: "University of Southern Mississippi",
     location: "Hattiesburg, MS",
     logo: usmLogo,
@@ -95,9 +99,9 @@ export const experiencesData = [
     date: "Nov 2017 - Nov 2018",
   },
   {
-    title: "Software Development Engineer in Test I",
+    title: "Software Development Engineer in Test",
     company: "Capgemini",
-    location: "Bengaluru, India",
+    location: "Bengaluru, KA, India",
     logo: capgeminiLogo,
     description:
       "• Led automation initiatives across multiple client projects (T-Mobile & Thomson Reuters)\n• Reduced test cycle time by 50% through comprehensive web application automation\n• Implemented batch test execution using TestNG and Maven, significantly improving defect identification accuracy\n •Automated performance testing workflows saving ~8 hours per test cycle through tooling and process improvements.",
@@ -107,22 +111,24 @@ export const experiencesData = [
   {
     title: "Test Automation Engineer",
     company: "Tata Consultancy Services",
-    location: " Chennai, India",
+    location: " Chennai, TN, India",
     logo: tcsLogo,
     description:
       "• Delivered enterprise-scale automation solutions for Liberty Mutual insurance applications\n• Achieved $8,000 annual cost savings by implementing Selenium WebDriver framework replacing legacy HP-QTP tools\n• Automated 650+ test scripts, reducing manual testing overhead while accelerating release velocity.\n• Optimized regression suites executing 1,050+ automated tests, reducing failure rates by ~8% through refactoring. ",
     icon: React.createElement(CgWorkAlt),
     date: "Oct 2013 - Dec 2015",
   },
+] as const;
+
+export const educationData = [
   {
     title: "Master of Science",
     company: "University of Southern Mississippi",
     location: "Hattiesburg, MS",
     logo: usmLogo,
     description:
-      "• Built a strong foundation in advanced computer science concepts and software engineering practices\n• Strengthened programming skills in Python, Java, and core data structures",
-    icon: React.createElement(LuGraduationCap),
-    date: "Graduate",
+      "Built a strong foundation in advanced computer science concepts, software engineering practices, and applied research in computing systems.",
+    date: "2017 - 2018",
   },
   {
     title: "Bachelor of Technology",
@@ -130,11 +136,9 @@ export const experiencesData = [
     location: "Thanjavur, India",
     logo: sastraLogo,
     description:
-      "• Built a solid foundation in computer science and software engineering principles\n• Strengthened understanding of algorithms, data structures, and software development methodologies",
-    icon: React.createElement(LuGraduationCap),
-    date: "Undergraduate",
+      "Focused on computer science fundamentals, software development methodologies, algorithms, and data structures.",
+    date: "2010 - 2014",
   },
-
 ] as const;
 
 export const projectsData = [
@@ -183,30 +187,34 @@ export const skillsData = [
   "Azure DevOps",
   "BDD/TDD",
   "CI/CD",
-  "Cline",
-  "Cloud Shepherd",
-  "Cross-Platform Testing",
-  "Cypress",
-  "Docker",
+  "Data Analysis",
   "Distributed Systems Testing",
+  "Docker",
+  "Embedded Systems",
   "End-to-End Automation",
+  "Firmware Validation",
   "Framework Design",
   "Git",
-  "Hydra",
-  "Javascript",
-  "Jenkins",
   "Java",
+  "JavaScript",
+  "Jenkins",
   "JIRA",
-  "Kiro AI",
   "Kubernetes",
-  "Mobile Testing (Android/iOS)",
+  "Linux",
+  "Mobile Testing",
+  "NAND Flash",
   "Performance Testing",
   "Playwright",
   "Python",
+  "Radar",
   "React",
   "Selenium",
-  "SOAP and REST APIs",
+  "SOAP/REST APIs",
+  "Splunk",
   "SQL",
+  "System Validation",
+  "Tableau",
+  "Test Automation",
   "TestNG",
   "TypeScript",
   "UI Testing",

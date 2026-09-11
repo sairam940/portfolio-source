@@ -20,31 +20,60 @@ export default function ThemeContextProvider({
 }: ThemeContextProviderProps) {
   const [theme, setTheme] = useState<Theme>("light");
 
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-      window.localStorage.setItem("theme", "dark");
+  const applyTheme = (nextTheme: Theme) => {
+    setTheme(nextTheme);
+
+    if (nextTheme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
-      setTheme("light");
-      window.localStorage.setItem("theme", "light");
       document.documentElement.classList.remove("dark");
     }
   };
 
+  const getTimeBasedTheme = (): Theme => {
+    const hour = new Date().getHours();
+    return hour >= 7 && hour < 19 ? "light" : "dark";
+  };
+
+  const toggleTheme = () => {
+    const nextTheme = theme === "light" ? "dark" : "light";
+    window.localStorage.setItem("theme", nextTheme);
+    window.localStorage.setItem("theme-manual-override", "true");
+    applyTheme(nextTheme);
+  };
+
   useEffect(() => {
-    const localTheme = window.localStorage.getItem("theme") as Theme | null;
+    const manualOverride = window.localStorage.getItem("theme-manual-override") === "true";
 
-    if (localTheme) {
-      setTheme(localTheme);
-
-      if (localTheme === "dark") {
-        document.documentElement.classList.add("dark");
+    if (manualOverride) {
+      const savedTheme = window.localStorage.getItem("theme") as Theme | null;
+      if (savedTheme === "light" || savedTheme === "dark") {
+        applyTheme(savedTheme);
+      } else {
+        applyTheme(getTimeBasedTheme());
       }
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-      document.documentElement.classList.add("dark");
+      return;
     }
+
+    window.localStorage.removeItem("theme");
+    applyTheme(getTimeBasedTheme());
+
+    const interval = window.setInterval(() => {
+      const stillManualOverride =
+        window.localStorage.getItem("theme-manual-override") === "true";
+
+      if (stillManualOverride) {
+        const savedTheme = window.localStorage.getItem("theme") as Theme | null;
+        if (savedTheme === "light" || savedTheme === "dark") {
+          applyTheme(savedTheme);
+        }
+        return;
+      }
+
+      applyTheme(getTimeBasedTheme());
+    }, 60_000);
+
+    return () => window.clearInterval(interval);
   }, []);
 
   return (
