@@ -49,15 +49,15 @@ export default function Experience() {
                 boxShadow: "0 0 0 6px rgba(59,130,246,0.08)",
               }}
             >
-              <div className="mb-2 flex items-center gap-3">
+              <div className="mb-2 flex min-w-0 items-center gap-3">
                 {item.logo && (
                   <div
                     className={
                       item.company === "Apple"
-                        ? "flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-white p-2 shadow-sm dark:border-slate-300 dark:bg-white"
+                        ? "flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-white p-2 shadow-sm dark:border-slate-300 dark:bg-white"
                         : item.company === "Tata Consultancy Services" || item.company === "Change Healthcare (via Innova Solutions)"
-                          ? "flex h-14 w-14 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-white p-2 dark:border-slate-700 dark:bg-slate-900"
-                          : "flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-white p-2 dark:border-slate-700 dark:bg-slate-900"
+                          ? "flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-white p-2 dark:border-slate-700 dark:bg-slate-900"
+                          : "flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-white p-2 dark:border-slate-700 dark:bg-slate-900"
                     }
                   >
                     <Image
@@ -65,11 +65,13 @@ export default function Experience() {
                       alt={`${item.company} logo`}
                       width={item.company === "Apple" ? 48 : item.company === "Tata Consultancy Services" || item.company === "Change Healthcare (via Innova Solutions)" ? 56 : 48}
                       height={item.company === "Apple" ? 48 : item.company === "Tata Consultancy Services" || item.company === "Change Healthcare (via Innova Solutions)" ? 56 : 48}
+                      loading="lazy"
+                      sizes="56px"
                       className="h-full w-full object-contain"
                     />
                   </div>
                 )}
-                <h3 className="whitespace-nowrap text-lg font-semibold capitalize text-slate-900 dark:text-white">{item.title}</h3>
+                <h3 className="min-w-0 text-base font-semibold capitalize leading-6 text-slate-900 sm:text-lg dark:text-white">{item.title}</h3>
               </div>
 
               <p className="!mt-0 flex flex-wrap items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-300">

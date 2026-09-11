@@ -11,7 +11,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
-  const { ref } = useSectionInView("RP", 0.5);
+  const { ref } = useSectionInView("RP");
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
@@ -35,7 +35,7 @@ export default function Intro() {
                   alt="Ram Pullabhotla portrait"
                   width={200}
                   height={200}
-                  quality={100}
+                  quality={75}
                   priority={true}
                   sizes="(max-width: 640px) 64px, (max-width: 1024px) 80px, 96px"
                   className="h-full w-full object-cover object-top"

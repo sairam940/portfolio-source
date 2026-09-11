@@ -25,12 +25,14 @@ export default function Education() {
           >
             <div className="flex items-start gap-4">
               {item.logo && (
-                <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-white p-2 dark:border-slate-700 dark:bg-slate-900">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-200 bg-white p-2 dark:border-slate-700 dark:bg-slate-900">
                   <Image
                     src={item.logo}
                     alt={`${item.company} logo`}
                     width={48}
                     height={48}
+                    loading="lazy"
+                    sizes="48px"
                     className="h-full w-full object-contain"
                   />
                 </div>

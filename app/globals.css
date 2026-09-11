@@ -120,3 +120,29 @@ html.dark .pill {
 .text-balance {
   text-wrap: balance;
 }
+
+@media (max-width: 767px) {
+  .vertical-timeline {
+    width: 100%;
+  }
+
+  .vertical-timeline::before {
+    left: 1rem;
+    margin-left: 0;
+  }
+
+  .vertical-timeline-element-icon {
+    left: 1rem;
+    margin-left: -18px;
+  }
+
+  .vertical-timeline-element-content {
+    width: calc(100% - 3.5rem);
+    margin-left: 3.5rem;
+    padding: 1.1rem 1rem;
+  }
+
+  .vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
+    transform: translate3d(0, 20px, 0);
+  }
+}

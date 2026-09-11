@@ -68,7 +68,9 @@ export default function Project({
               <Image
                 src={imageUrl}
                 alt="Project I worked on"
-                quality={95}
+                quality={75}
+                loading="lazy"
+                sizes="(max-width: 1024px) 100vw, 45vw"
                 className="h-[220px] w-full rounded-[1.2rem] object-cover transition duration-300 group-hover:scale-[1.02]"
               />
             </div>
